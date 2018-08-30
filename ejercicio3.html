@@ -4,28 +4,46 @@
 	<title>Banderas</title>
 	<meta charset="utf-8">
 	<style type="text/css">
+		div{
+			margin:0;
+			padding:0;
+			border:0;
+
+		}
 
 		.gallery{
 			width: 2000px;
 			height: 1000px;
-			background-color: silver;
-			border: 2px;
-			border-color: black;
+			background-color: white;
+			border: 3px solid black;
 			margin:2;
 		}
 		.flag_blank{
-			width: 600px;
-			height: 200px;
+			float:left;
+			width: 320px;
+			height: 180px;
 			background-color: white;
-			border: 1px; 
+			border: 2px solid black;
+			margin:5px;
+			margin-bottom: 30px;
+			padding: 1px;
+			box-sizing: border-box;
 		}
 
 		.spain{
-
+			background-color: red;
+			width: auto;
+			height: 100%;
+			margin: 0px;
+			box-sizing: border-box;
 		}
 
-		.denmarc{
-
+		.denmark{
+			background-color: red;
+			width: auto;
+			height: 100%;
+			margin: 0px;
+			box-sizing: border-box;
 		}
 
 		.emirates{
@@ -42,25 +60,44 @@
 </head>
 <body>
 	<div class="gallery">
-		<div class="japan">
-			<p>España</p>
+		<section>
+		<div class="flag_blank">
+			<div class="spain">
+				<div style="position: relative;top: 48px; height: 80px; width: auto; background-color: yellow">
+				</div>
+		
+			</div>
+				<p style="display:inline-block; position:relative; vertical-align: middle; bottom:1px">España</p>
+		</div>
+		
+		<div class="flag_blank">
+			<div class="denmark">
+				<div style="position: absolute; top: 95px; height: 25px; width: 314px; background-color: white;z-index: 10"></div>
+				
+				<div style="position: relative; left: 90px; height: 100%; width: 25px; background-color: white; z-index:0"></div>
+								
+			</div>
+				<p style="position:relative; vertical-align: middle; bottom:1px">Dinamarca</p>
 
 		</div>
+		</section>
 
-		<div class="denmarc">
-			<p>Dinamarca</p>
+		<section style="clear: left; float: left">
+		<div class="flag_blank">
+			<div class="emirates">
+				
+				
+			</div>
+				<p style="display:inline-block; position:relative; vertical-align: middle; bottom:1px">Emiratos Árabes</p>
+		</div>	
+
+		<div class="flag_blank">
+			<div class="Japan">
 			
+			</div>	
+				<p style="display:inline-block; position:relative; vertical-align: middle; bottom:1px">Japón</p>
 		</div>
-
-		<div class="emirates">
-			<p>Emiratos Árabes</p>
-			
-		</div>
-
-		<div class="Japan">
-			<p>Japón</p>
-			
-		</div>
+		</section>
 	</div>
 </body>
 </html>
